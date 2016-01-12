@@ -14,7 +14,11 @@
 		E20AB5D11C45A5C000068C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20AB5CF1C45A5C000068C74 /* Main.storyboard */; };
 		E20AB5D31C45A5C000068C74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20AB5D21C45A5C000068C74 /* Assets.xcassets */; };
 		E20AB5D61C45A5C000068C74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20AB5D41C45A5C000068C74 /* LaunchScreen.storyboard */; };
-		E20AB5E11C45A5C100068C74 /* iTunesMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB5E01C45A5C100068C74 /* iTunesMusicTests.m */; };
+		E20AB5F41C45B0DA00068C74 /* ITunesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB5F31C45B0DA00068C74 /* ITunesClient.m */; };
+		E20AB5FD1C45BCCE00068C74 /* NSError+ITunesMusicError.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB5FC1C45BCCE00068C74 /* NSError+ITunesMusicError.m */; };
+		E20AB6011C45C4CC00068C74 /* ITunesArtistInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = E20AB6001C45C4CC00068C74 /* ITunesArtistInfo.json */; };
+		E20AB6041C45C50400068C74 /* StubFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6031C45C50400068C74 /* StubFileUtil.m */; };
+		E20AB6061C45C52100068C74 /* ITunesClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6051C45C52100068C74 /* ITunesClientTests.m */; };
 		FF3D6002594390B086B273CC /* libPods-iTunesMusicTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA6A9DF7CAB042AEE420827 /* libPods-iTunesMusicTests.a */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +48,18 @@
 		E20AB5D51C45A5C000068C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E20AB5D71C45A5C000068C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E20AB5DC1C45A5C100068C74 /* iTunesMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E20AB5E01C45A5C100068C74 /* iTunesMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTunesMusicTests.m; sourceTree = "<group>"; };
 		E20AB5E21C45A5C100068C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E20AB5F11C45AF5500068C74 /* APIITunesProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIITunesProtocol.h; sourceTree = "<group>"; };
+		E20AB5F21C45B0DA00068C74 /* ITunesClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITunesClient.h; sourceTree = "<group>"; };
+		E20AB5F31C45B0DA00068C74 /* ITunesClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITunesClient.m; sourceTree = "<group>"; };
+		E20AB5F51C45B2AA00068C74 /* ITunesClientConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITunesClientConstants.h; sourceTree = "<group>"; };
+		E20AB5F91C45BC4300068C74 /* ITunesClientErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITunesClientErrors.h; sourceTree = "<group>"; };
+		E20AB5FB1C45BCCE00068C74 /* NSError+ITunesMusicError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+ITunesMusicError.h"; sourceTree = "<group>"; };
+		E20AB5FC1C45BCCE00068C74 /* NSError+ITunesMusicError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+ITunesMusicError.m"; sourceTree = "<group>"; };
+		E20AB6001C45C4CC00068C74 /* ITunesArtistInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ITunesArtistInfo.json; sourceTree = "<group>"; };
+		E20AB6021C45C50400068C74 /* StubFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StubFileUtil.h; sourceTree = "<group>"; };
+		E20AB6031C45C50400068C74 /* StubFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StubFileUtil.m; sourceTree = "<group>"; };
+		E20AB6051C45C52100068C74 /* ITunesClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITunesClientTests.m; sourceTree = "<group>"; };
 		E8C9467455DEB2F1C249FDFF /* Pods-iTunesMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesMusicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesMusicTests/Pods-iTunesMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EDDB6B3279C086096AF8978A /* Pods-iTunesMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesMusicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesMusicTests/Pods-iTunesMusicTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,7 +150,9 @@
 		E20AB5DF1C45A5C100068C74 /* iTunesMusicTests */ = {
 			isa = PBXGroup;
 			children = (
-				E20AB5E01C45A5C100068C74 /* iTunesMusicTests.m */,
+				E20AB6051C45C52100068C74 /* ITunesClientTests.m */,
+				E20AB5FF1C45C47800068C74 /* TestUtils */,
+				E20AB5FE1C45C46F00068C74 /* Stubs */,
 				E20AB5E21C45A5C100068C74 /* Info.plist */,
 			);
 			path = iTunesMusicTests;
@@ -161,6 +177,8 @@
 		E20AB5ED1C45A7FF00068C74 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E20AB5FA1C45BCC700068C74 /* Helpers */,
+				E20AB5F01C45AEE000068C74 /* iTunes Client */,
 				E20AB5EE1C45A80500068C74 /* View */,
 			);
 			name = Common;
@@ -173,6 +191,44 @@
 				E20AB5D41C45A5C000068C74 /* LaunchScreen.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		E20AB5F01C45AEE000068C74 /* iTunes Client */ = {
+			isa = PBXGroup;
+			children = (
+				E20AB5F11C45AF5500068C74 /* APIITunesProtocol.h */,
+				E20AB5F21C45B0DA00068C74 /* ITunesClient.h */,
+				E20AB5F31C45B0DA00068C74 /* ITunesClient.m */,
+				E20AB5F51C45B2AA00068C74 /* ITunesClientConstants.h */,
+				E20AB5F91C45BC4300068C74 /* ITunesClientErrors.h */,
+			);
+			name = "iTunes Client";
+			sourceTree = "<group>";
+		};
+		E20AB5FA1C45BCC700068C74 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E20AB5FB1C45BCCE00068C74 /* NSError+ITunesMusicError.h */,
+				E20AB5FC1C45BCCE00068C74 /* NSError+ITunesMusicError.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		E20AB5FE1C45C46F00068C74 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				E20AB6001C45C4CC00068C74 /* ITunesArtistInfo.json */,
+			);
+			name = Stubs;
+			sourceTree = "<group>";
+		};
+		E20AB5FF1C45C47800068C74 /* TestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				E20AB6021C45C50400068C74 /* StubFileUtil.h */,
+				E20AB6031C45C50400068C74 /* StubFileUtil.m */,
+			);
+			name = TestUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +281,7 @@
 		E20AB5BB1C45A5C000068C74 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Toni;
 				TargetAttributes = {
@@ -271,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20AB6011C45C4CC00068C74 /* ITunesArtistInfo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,9 +432,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20AB5F41C45B0DA00068C74 /* ITunesClient.m in Sources */,
 				E20AB5CE1C45A5C000068C74 /* ViewController.m in Sources */,
 				E20AB5CB1C45A5C000068C74 /* AppDelegate.m in Sources */,
 				E20AB5C81C45A5C000068C74 /* main.m in Sources */,
+				E20AB5FD1C45BCCE00068C74 /* NSError+ITunesMusicError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +444,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E20AB5E11C45A5C100068C74 /* iTunesMusicTests.m in Sources */,
+				E20AB6061C45C52100068C74 /* ITunesClientTests.m in Sources */,
+				E20AB6041C45C50400068C74 /* StubFileUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +567,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iTunesMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unagistudio.iTunesMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +580,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iTunesMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unagistudio.iTunesMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
