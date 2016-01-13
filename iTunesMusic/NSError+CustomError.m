@@ -6,7 +6,7 @@
 //  Copyright © 2015 Toni. All rights reserved.
 //
 
-#import "NSError+ITunesMusicError.h"
+#import "NSError+CustomError.h"
 
 @implementation NSError (CustomError)
 

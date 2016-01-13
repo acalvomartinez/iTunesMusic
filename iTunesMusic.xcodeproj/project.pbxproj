@@ -15,10 +15,14 @@
 		E20AB5D31C45A5C000068C74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20AB5D21C45A5C000068C74 /* Assets.xcassets */; };
 		E20AB5D61C45A5C000068C74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20AB5D41C45A5C000068C74 /* LaunchScreen.storyboard */; };
 		E20AB5F41C45B0DA00068C74 /* ITunesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB5F31C45B0DA00068C74 /* ITunesClient.m */; };
-		E20AB5FD1C45BCCE00068C74 /* NSError+ITunesMusicError.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB5FC1C45BCCE00068C74 /* NSError+ITunesMusicError.m */; };
+		E20AB5FD1C45BCCE00068C74 /* NSError+CustomError.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB5FC1C45BCCE00068C74 /* NSError+CustomError.m */; };
 		E20AB6011C45C4CC00068C74 /* ITunesArtistInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = E20AB6001C45C4CC00068C74 /* ITunesArtistInfo.json */; };
 		E20AB6041C45C50400068C74 /* StubFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6031C45C50400068C74 /* StubFileUtil.m */; };
 		E20AB6061C45C52100068C74 /* ITunesClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6051C45C52100068C74 /* ITunesClientTests.m */; };
+		E20AB60A1C466D5300068C74 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6091C466D5300068C74 /* Artist.m */; };
+		E20AB60D1C466D6C00068C74 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB60C1C466D6C00068C74 /* Album.m */; };
+		E20AB6111C46707A00068C74 /* JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6101C46707A00068C74 /* JSONParser.m */; };
+		E20AB6161C4681FA00068C74 /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6151C4681FA00068C74 /* NSDate+Formatter.m */; };
 		FF3D6002594390B086B273CC /* libPods-iTunesMusicTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA6A9DF7CAB042AEE420827 /* libPods-iTunesMusicTests.a */; };
 /* End PBXBuildFile section */
 
@@ -54,12 +58,22 @@
 		E20AB5F31C45B0DA00068C74 /* ITunesClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITunesClient.m; sourceTree = "<group>"; };
 		E20AB5F51C45B2AA00068C74 /* ITunesClientConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITunesClientConstants.h; sourceTree = "<group>"; };
 		E20AB5F91C45BC4300068C74 /* ITunesClientErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITunesClientErrors.h; sourceTree = "<group>"; };
-		E20AB5FB1C45BCCE00068C74 /* NSError+ITunesMusicError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+ITunesMusicError.h"; sourceTree = "<group>"; };
-		E20AB5FC1C45BCCE00068C74 /* NSError+ITunesMusicError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+ITunesMusicError.m"; sourceTree = "<group>"; };
+		E20AB5FB1C45BCCE00068C74 /* NSError+CustomError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+CustomError.h"; sourceTree = "<group>"; };
+		E20AB5FC1C45BCCE00068C74 /* NSError+CustomError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CustomError.m"; sourceTree = "<group>"; };
 		E20AB6001C45C4CC00068C74 /* ITunesArtistInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ITunesArtistInfo.json; sourceTree = "<group>"; };
 		E20AB6021C45C50400068C74 /* StubFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StubFileUtil.h; sourceTree = "<group>"; };
 		E20AB6031C45C50400068C74 /* StubFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StubFileUtil.m; sourceTree = "<group>"; };
 		E20AB6051C45C52100068C74 /* ITunesClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITunesClientTests.m; sourceTree = "<group>"; };
+		E20AB6081C466D5300068C74 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		E20AB6091C466D5300068C74 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		E20AB60B1C466D6C00068C74 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		E20AB60C1C466D6C00068C74 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		E20AB60F1C46707A00068C74 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
+		E20AB6101C46707A00068C74 /* JSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParser.m; sourceTree = "<group>"; };
+		E20AB6121C4671B600068C74 /* JSONParserErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParserErrors.h; sourceTree = "<group>"; };
+		E20AB6131C46775800068C74 /* JSONParserIndetifiers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParserIndetifiers.h; sourceTree = "<group>"; };
+		E20AB6141C4681FA00068C74 /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
+		E20AB6151C4681FA00068C74 /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
 		E8C9467455DEB2F1C249FDFF /* Pods-iTunesMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesMusicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesMusicTests/Pods-iTunesMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EDDB6B3279C086096AF8978A /* Pods-iTunesMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesMusicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesMusicTests/Pods-iTunesMusicTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				E20AB5FA1C45BCC700068C74 /* Helpers */,
+				E20AB60E1C46704100068C74 /* Parser */,
+				E20AB6071C466CDE00068C74 /* Model */,
 				E20AB5F01C45AEE000068C74 /* iTunes Client */,
 				E20AB5EE1C45A80500068C74 /* View */,
 			);
@@ -208,8 +224,10 @@
 		E20AB5FA1C45BCC700068C74 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				E20AB5FB1C45BCCE00068C74 /* NSError+ITunesMusicError.h */,
-				E20AB5FC1C45BCCE00068C74 /* NSError+ITunesMusicError.m */,
+				E20AB6141C4681FA00068C74 /* NSDate+Formatter.h */,
+				E20AB6151C4681FA00068C74 /* NSDate+Formatter.m */,
+				E20AB5FB1C45BCCE00068C74 /* NSError+CustomError.h */,
+				E20AB5FC1C45BCCE00068C74 /* NSError+CustomError.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -229,6 +247,28 @@
 				E20AB6031C45C50400068C74 /* StubFileUtil.m */,
 			);
 			name = TestUtils;
+			sourceTree = "<group>";
+		};
+		E20AB6071C466CDE00068C74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E20AB6081C466D5300068C74 /* Artist.h */,
+				E20AB6091C466D5300068C74 /* Artist.m */,
+				E20AB60B1C466D6C00068C74 /* Album.h */,
+				E20AB60C1C466D6C00068C74 /* Album.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E20AB60E1C46704100068C74 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				E20AB60F1C46707A00068C74 /* JSONParser.h */,
+				E20AB6101C46707A00068C74 /* JSONParser.m */,
+				E20AB6121C4671B600068C74 /* JSONParserErrors.h */,
+				E20AB6131C46775800068C74 /* JSONParserIndetifiers.h */,
+			);
+			name = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,8 +475,12 @@
 				E20AB5F41C45B0DA00068C74 /* ITunesClient.m in Sources */,
 				E20AB5CE1C45A5C000068C74 /* ViewController.m in Sources */,
 				E20AB5CB1C45A5C000068C74 /* AppDelegate.m in Sources */,
+				E20AB6111C46707A00068C74 /* JSONParser.m in Sources */,
 				E20AB5C81C45A5C000068C74 /* main.m in Sources */,
-				E20AB5FD1C45BCCE00068C74 /* NSError+ITunesMusicError.m in Sources */,
+				E20AB60A1C466D5300068C74 /* Artist.m in Sources */,
+				E20AB60D1C466D6C00068C74 /* Album.m in Sources */,
+				E20AB5FD1C45BCCE00068C74 /* NSError+CustomError.m in Sources */,
+				E20AB6161C4681FA00068C74 /* NSDate+Formatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

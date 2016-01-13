@@ -8,10 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@class Artist;
+
+typedef void(^ArtistParseBlock)(Artist *);
+typedef void(^ParseErrorBlock)(NSError *);
+
 @interface JSONParser : NSObject
 
 + (void)artistFromJSONDictionary:(NSDictionary *)jsonDictionary
-                              completion:(ActualForecastParseBlock)completionBlock
+                              completion:(ArtistParseBlock)completionBlock
                                  onError:(ParseErrorBlock)errorBlock;
 
 @end

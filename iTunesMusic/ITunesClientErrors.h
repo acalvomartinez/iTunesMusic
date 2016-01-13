@@ -8,21 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
-static NSString * const NetworkingErrorDomain = @"com.unagistudio.itunesmusic.networking.ErrorDomain";
+static NSString * const ITunesClientErrorDomain = @"ITunesClientErrorDomain";
 
-typedef enum networkingErrorTypes {
+typedef enum iTunesClientErrorTypes {
     NetworkingErrorCode,
     NetworkingConnectionErrorCode,
     NetworkingNotAvailableErrorCode,
     NetworkingNumberOfRetriesExceededErrorCode,
-    NetworkingActualWeatherErrorCode,
-    NetworkingForecastErrorCode
-} NetworkingsErrorTypes;
+    NetworkingArtistInfoErrorCode,
+} ITunesClientErrorTypes;
 
-static NSString * const NetworkingErrorDescription = @"Something about Networking";
-static NSString * const NetworkingErrorConnection = @"Connection error";
+static NSString * const ITunesClientNetworkingErrorDescription = @"Something about Networking";
+static NSString * const ITunesClientNetworkingErrorConnection = @"Connection error";
 
-static NSString * const NetworkingErrorNotAvailable = @"Network not available";
-static NSString * const NetworkingErrorNumberOfRetriesExceeded = @"Number of retries exceeded.";
+static NSString * const ITunesClientErrorNotAvailable = @"Network not available";
+static NSString * const ITunesClientErrorNumberOfRetriesExceeded = @"Number of retries exceeded.";
 
-static NSString * const NetworkingErrorArtistInfoRequest = @"Error in Artist Info Request. Check your network connection and try later.";
+static NSString * const ITunesClientErrorArtistInfoRequest = @"Error in Artist Info Request. Check your network connection and try later.";

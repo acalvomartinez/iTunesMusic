@@ -10,11 +10,15 @@
 
 @implementation NSDate (Formatter)
 
-+ (instancetype)dateWithString:(NSString *)dateString andDateFormat:(NSString *)dateFormat {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:dateFormat];
++ (instancetype)dateWithRFC3339String:(NSString *)dateString {
+    NSDateFormatter *sRFC3339DateFormatter = [[NSDateFormatter alloc] init];
+    NSLocale *enUSPOSIXLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
     
-    NSDate *dateFromString = [dateFormatter dateFromString:dateString];
+    [sRFC3339DateFormatter setLocale:enUSPOSIXLocale];
+    [sRFC3339DateFormatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"];
+    [sRFC3339DateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+    
+    NSDate *dateFromString = [sRFC3339DateFormatter dateFromString:dateString];
     
     return dateFromString;
 }

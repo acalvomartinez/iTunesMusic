@@ -10,7 +10,7 @@
 
 @interface NSDate (Formatter)
 
-+ (instancetype)dateWithString:(NSString *)stringDate andDateFormat:(NSString *)dateFormat;
++ (instancetype)dateWithRFC3339String:(NSString *)stringDate;
 
 - (NSString *)stringFromDateWithDateFormat:(NSString *)dateFormat;
 

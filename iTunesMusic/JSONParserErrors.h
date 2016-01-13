@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-static NSString * const ParserErrorDomain = @"com.unagistudio.openweather.parser.ErrorDomain";
+static NSString * const ParserErrorDomain = @"ParserErrorDomain";
 
 typedef enum parseErrorTypes {
     ParserError,

@@ -6,8 +6,15 @@
 //  Copyright © 2016 Toni. All rights reserved.
 //
 
-#ifndef JSONParserIndetifiers_h
-#define JSONParserIndetifiers_h
+#import <Foundation/Foundation.h>
 
+static NSString * const resultCountKey = @"resultCount";
+static NSString * const resultsKey = @"results";
 
-#endif /* JSONParserIndetifiers_h */
+static NSString * const artistIdKey = @"artistId";
+static NSString * const artistNameKey = @"artistName";
+
+static NSString * const albumIdKey = @"collectionId";
+static NSString * const albumTitleKey = @"collectionName";
+static NSString * const albumArtworkURLKey = @"artworkUrl100";
+static NSString * const albumReleaseDateKey = @"releaseDate";

@@ -9,7 +9,7 @@
 #import "ITunesClient.h"
 #import "ITunesClientConstants.h"
 
-#import "NSError+ITunesMusicError.h"
+#import "NSError+CustomError.h"
 #import "ITunesClientErrors.h"
 
 #import <AFNetworking/AFNetworking.h>
@@ -51,9 +51,9 @@
                        }
                    } failure:^(NSError * _Nullable error) {
                        if (failure) {
-                           NSError *networkingError = [NSError errorWithDescription:NetworkingErrorArtistInfoRequest
+                           NSError *networkingError = [NSError errorWithDescription:ITunesClientErrorArtistInfoRequest
                                                                              reason:error.localizedFailureReason
-                                                                             domain:NetworkingErrorDomain
+                                                                             domain:ITunesClientErrorDomain
                                                                                code:NetworkingNumberOfRetriesExceededErrorCode
                                                                         parentError:error];
                            failure(networkingError);
@@ -71,9 +71,9 @@
                  failure:(ErrorBlock _Nullable)failure {
     if (nTimes <= 0) {
         if (failure) {
-            NSError *networkingError = [NSError errorWithDescription:NetworkingErrorDescription
-                                                              reason:NetworkingErrorNumberOfRetriesExceeded
-                                                              domain:NetworkingErrorDomain
+            NSError *networkingError = [NSError errorWithDescription:ITunesClientNetworkingErrorDescription
+                                                              reason:ITunesClientErrorNumberOfRetriesExceeded
+                                                              domain:ITunesClientErrorDomain
                                                                 code:NetworkingNumberOfRetriesExceededErrorCode
                                                          parentError:nil];
             failure(networkingError);
@@ -101,9 +101,9 @@
             success(responseObject);
         }
     } failure:^(NSURLSessionTask *operation, NSError *error) {
-        NSError *networkingError = [NSError errorWithDescription:NetworkingErrorDescription
+        NSError *networkingError = [NSError errorWithDescription:ITunesClientNetworkingErrorDescription
                                                           reason:error.localizedFailureReason
-                                                          domain:NetworkingErrorDomain
+                                                          domain:ITunesClientErrorDomain
                                                             code:NetworkingErrorCode
                                                      parentError:error];
         if (failure) {
