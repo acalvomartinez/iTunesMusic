@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString * const errorMessageKey = @"errorMessage";
+
 static NSString * const resultCountKey = @"resultCount";
 static NSString * const resultsKey = @"results";
 

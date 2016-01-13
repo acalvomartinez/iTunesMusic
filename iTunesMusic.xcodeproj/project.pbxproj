@@ -23,6 +23,9 @@
 		E20AB60D1C466D6C00068C74 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB60C1C466D6C00068C74 /* Album.m */; };
 		E20AB6111C46707A00068C74 /* JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6101C46707A00068C74 /* JSONParser.m */; };
 		E20AB6161C4681FA00068C74 /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6151C4681FA00068C74 /* NSDate+Formatter.m */; };
+		E20AB6181C46854600068C74 /* JSONParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6171C46854600068C74 /* JSONParserTests.m */; };
+		E20AB61A1C468C1200068C74 /* NoResult.json in Resources */ = {isa = PBXBuildFile; fileRef = E20AB6191C468C1200068C74 /* NoResult.json */; };
+		E20AB61C1C468EDF00068C74 /* ErrorMessage.json in Resources */ = {isa = PBXBuildFile; fileRef = E20AB61B1C468EDF00068C74 /* ErrorMessage.json */; };
 		FF3D6002594390B086B273CC /* libPods-iTunesMusicTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA6A9DF7CAB042AEE420827 /* libPods-iTunesMusicTests.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +77,9 @@
 		E20AB6131C46775800068C74 /* JSONParserIndetifiers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParserIndetifiers.h; sourceTree = "<group>"; };
 		E20AB6141C4681FA00068C74 /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
 		E20AB6151C4681FA00068C74 /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
+		E20AB6171C46854600068C74 /* JSONParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParserTests.m; sourceTree = "<group>"; };
+		E20AB6191C468C1200068C74 /* NoResult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NoResult.json; sourceTree = "<group>"; };
+		E20AB61B1C468EDF00068C74 /* ErrorMessage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ErrorMessage.json; sourceTree = "<group>"; };
 		E8C9467455DEB2F1C249FDFF /* Pods-iTunesMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesMusicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesMusicTests/Pods-iTunesMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EDDB6B3279C086096AF8978A /* Pods-iTunesMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesMusicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesMusicTests/Pods-iTunesMusicTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				E20AB6051C45C52100068C74 /* ITunesClientTests.m */,
+				E20AB6171C46854600068C74 /* JSONParserTests.m */,
 				E20AB5FF1C45C47800068C74 /* TestUtils */,
 				E20AB5FE1C45C46F00068C74 /* Stubs */,
 				E20AB5E21C45A5C100068C74 /* Info.plist */,
@@ -236,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				E20AB6001C45C4CC00068C74 /* ITunesArtistInfo.json */,
+				E20AB6191C468C1200068C74 /* NoResult.json */,
+				E20AB61B1C468EDF00068C74 /* ErrorMessage.json */,
 			);
 			name = Stubs;
 			sourceTree = "<group>";
@@ -368,6 +377,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20AB61C1C468EDF00068C74 /* ErrorMessage.json in Resources */,
+				E20AB61A1C468C1200068C74 /* NoResult.json in Resources */,
 				E20AB6011C45C4CC00068C74 /* ITunesArtistInfo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E20AB6061C45C52100068C74 /* ITunesClientTests.m in Sources */,
+				E20AB6181C46854600068C74 /* JSONParserTests.m in Sources */,
 				E20AB6041C45C50400068C74 /* StubFileUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

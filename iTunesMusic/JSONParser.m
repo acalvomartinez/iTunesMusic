@@ -34,13 +34,22 @@
         return;
     }
     
+    if ([jsonDictionary objectForKey:errorMessageKey]) {
+        NSError *parseError = [NSError errorWithDescription:ParserErrorEmptyJSONDescription
+                                                     reason:[jsonDictionary objectForKey:errorMessageKey]
+                                                     domain:ParserErrorDomain
+                                                       code:ParserErrorEmptyJSONFile
+                                                parentError:nil];
+        if (errorBlock != nil) errorBlock(parseError);
+        return;
+    }
+    
     Artist *artist = [self artistFromJSONDictionary:jsonDictionary];
     
     if (completionBlock != nil) {
         completionBlock(artist);
     }
 }
-
 
 #pragma mark - Private
 
