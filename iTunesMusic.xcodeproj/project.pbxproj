@@ -191,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				E20AB5ED1C45A7FF00068C74 /* Common */,
+				E20AB61D1C46A18D00068C74 /* Modules */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -280,6 +281,53 @@
 			name = Parser;
 			sourceTree = "<group>";
 		};
+		E20AB61D1C46A18D00068C74 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E20AB61F1C46A23C00068C74 /* AlbumList */,
+				E20AB61E1C46A22D00068C74 /* ArtistList */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		E20AB61E1C46A22D00068C74 /* ArtistList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ArtistList;
+			sourceTree = "<group>";
+		};
+		E20AB61F1C46A23C00068C74 /* AlbumList */ = {
+			isa = PBXGroup;
+			children = (
+				E20AB6201C46A25E00068C74 /* Application Logic */,
+				E20AB6211C46A26A00068C74 /* Module interface */,
+				E20AB6221C46A27700068C74 /* User interface */,
+			);
+			name = AlbumList;
+			sourceTree = "<group>";
+		};
+		E20AB6201C46A25E00068C74 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Application Logic";
+			sourceTree = "<group>";
+		};
+		E20AB6211C46A26A00068C74 /* Module interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Module interface";
+			sourceTree = "<group>";
+		};
+		E20AB6221C46A27700068C74 /* User interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "User interface";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -330,7 +378,7 @@
 		E20AB5BB1C45A5C000068C74 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = "";
+				CLASSPREFIX = IM;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Toni;
 				TargetAttributes = {
