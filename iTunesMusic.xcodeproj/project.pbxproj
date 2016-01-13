@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		8204116FBD8E3BB7308EE6CB /* libPods-iTunesMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB327D99F8590BE5E4E8B3E1 /* libPods-iTunesMusic.a */; };
 		E20AB5C81C45A5C000068C74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB5C71C45A5C000068C74 /* main.m */; };
-		E20AB5CB1C45A5C000068C74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB5CA1C45A5C000068C74 /* AppDelegate.m */; };
-		E20AB5CE1C45A5C000068C74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB5CD1C45A5C000068C74 /* ViewController.m */; };
+		E20AB5CB1C45A5C000068C74 /* IMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB5CA1C45A5C000068C74 /* IMAppDelegate.m */; };
 		E20AB5D11C45A5C000068C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20AB5CF1C45A5C000068C74 /* Main.storyboard */; };
 		E20AB5D31C45A5C000068C74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20AB5D21C45A5C000068C74 /* Assets.xcassets */; };
 		E20AB5D61C45A5C000068C74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20AB5D41C45A5C000068C74 /* LaunchScreen.storyboard */; };
@@ -26,6 +25,13 @@
 		E20AB6181C46854600068C74 /* JSONParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6171C46854600068C74 /* JSONParserTests.m */; };
 		E20AB61A1C468C1200068C74 /* NoResult.json in Resources */ = {isa = PBXBuildFile; fileRef = E20AB6191C468C1200068C74 /* NoResult.json */; };
 		E20AB61C1C468EDF00068C74 /* ErrorMessage.json in Resources */ = {isa = PBXBuildFile; fileRef = E20AB61B1C468EDF00068C74 /* ErrorMessage.json */; };
+		E20AB6281C46A40100068C74 /* IMAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6271C46A40100068C74 /* IMAppDependencies.m */; };
+		E20AB62E1C46A5FE00068C74 /* IMArtistListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB62D1C46A5FE00068C74 /* IMArtistListPresenter.m */; };
+		E20AB6311C46A65700068C74 /* IMArtistListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6301C46A65700068C74 /* IMArtistListViewController.m */; };
+		E20AB6341C46A66E00068C74 /* IMArtistListWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6331C46A66E00068C74 /* IMArtistListWireframe.m */; };
+		E20AB6371C46A74000068C74 /* IMRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6361C46A74000068C74 /* IMRootWireframe.m */; };
+		E20AB63C1C46B94F00068C74 /* IMArtistListDisplayData.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB63B1C46B94F00068C74 /* IMArtistListDisplayData.m */; };
+		E20AB6421C46BF2400068C74 /* IMArtistListDisplayArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6411C46BF2400068C74 /* IMArtistListDisplayArtist.m */; };
 		FF3D6002594390B086B273CC /* libPods-iTunesMusicTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA6A9DF7CAB042AEE420827 /* libPods-iTunesMusicTests.a */; };
 /* End PBXBuildFile section */
 
@@ -46,10 +52,8 @@
 		D67A4A1C9260F7FB2BF1236A /* Pods-iTunesMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesMusic/Pods-iTunesMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		E20AB5C31C45A5C000068C74 /* iTunesMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20AB5C71C45A5C000068C74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E20AB5C91C45A5C000068C74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E20AB5CA1C45A5C000068C74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E20AB5CC1C45A5C000068C74 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E20AB5CD1C45A5C000068C74 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E20AB5C91C45A5C000068C74 /* IMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMAppDelegate.h; sourceTree = "<group>"; };
+		E20AB5CA1C45A5C000068C74 /* IMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMAppDelegate.m; sourceTree = "<group>"; };
 		E20AB5D01C45A5C000068C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E20AB5D21C45A5C000068C74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E20AB5D51C45A5C000068C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +84,22 @@
 		E20AB6171C46854600068C74 /* JSONParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParserTests.m; sourceTree = "<group>"; };
 		E20AB6191C468C1200068C74 /* NoResult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NoResult.json; sourceTree = "<group>"; };
 		E20AB61B1C468EDF00068C74 /* ErrorMessage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ErrorMessage.json; sourceTree = "<group>"; };
+		E20AB6261C46A40100068C74 /* IMAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAppDependencies.h; sourceTree = "<group>"; };
+		E20AB6271C46A40100068C74 /* IMAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAppDependencies.m; sourceTree = "<group>"; };
+		E20AB62C1C46A5FE00068C74 /* IMArtistListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMArtistListPresenter.h; sourceTree = "<group>"; };
+		E20AB62D1C46A5FE00068C74 /* IMArtistListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMArtistListPresenter.m; sourceTree = "<group>"; };
+		E20AB62F1C46A65700068C74 /* IMArtistListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMArtistListViewController.h; sourceTree = "<group>"; };
+		E20AB6301C46A65700068C74 /* IMArtistListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMArtistListViewController.m; sourceTree = "<group>"; };
+		E20AB6321C46A66E00068C74 /* IMArtistListWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMArtistListWireframe.h; sourceTree = "<group>"; };
+		E20AB6331C46A66E00068C74 /* IMArtistListWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMArtistListWireframe.m; sourceTree = "<group>"; };
+		E20AB6351C46A74000068C74 /* IMRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRootWireframe.h; sourceTree = "<group>"; };
+		E20AB6361C46A74000068C74 /* IMRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRootWireframe.m; sourceTree = "<group>"; };
+		E20AB6381C46B2E500068C74 /* IMArtistListModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMArtistListModuleInterface.h; sourceTree = "<group>"; };
+		E20AB6391C46B87800068C74 /* IMArtistListViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMArtistListViewInterface.h; sourceTree = "<group>"; };
+		E20AB63A1C46B94F00068C74 /* IMArtistListDisplayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMArtistListDisplayData.h; sourceTree = "<group>"; };
+		E20AB63B1C46B94F00068C74 /* IMArtistListDisplayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMArtistListDisplayData.m; sourceTree = "<group>"; };
+		E20AB6401C46BF2400068C74 /* IMArtistListDisplayArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMArtistListDisplayArtist.h; sourceTree = "<group>"; };
+		E20AB6411C46BF2400068C74 /* IMArtistListDisplayArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMArtistListDisplayArtist.m; sourceTree = "<group>"; };
 		E8C9467455DEB2F1C249FDFF /* Pods-iTunesMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesMusicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesMusicTests/Pods-iTunesMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EDDB6B3279C086096AF8978A /* Pods-iTunesMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesMusicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesMusicTests/Pods-iTunesMusicTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,10 +169,10 @@
 			children = (
 				E20AB5EC1C45A7DD00068C74 /* Classes */,
 				E20AB5EB1C45A78800068C74 /* Resources */,
-				E20AB5C91C45A5C000068C74 /* AppDelegate.h */,
-				E20AB5CA1C45A5C000068C74 /* AppDelegate.m */,
-				E20AB5CC1C45A5C000068C74 /* ViewController.h */,
-				E20AB5CD1C45A5C000068C74 /* ViewController.m */,
+				E20AB5C91C45A5C000068C74 /* IMAppDelegate.h */,
+				E20AB5CA1C45A5C000068C74 /* IMAppDelegate.m */,
+				E20AB6261C46A40100068C74 /* IMAppDependencies.h */,
+				E20AB6271C46A40100068C74 /* IMAppDependencies.m */,
 				E20AB5C61C45A5C000068C74 /* Supporting Files */,
 			);
 			path = iTunesMusic;
@@ -182,6 +202,8 @@
 		E20AB5EB1C45A78800068C74 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E20AB5CF1C45A5C000068C74 /* Main.storyboard */,
+				E20AB5D41C45A5C000068C74 /* LaunchScreen.storyboard */,
 				E20AB5D21C45A5C000068C74 /* Assets.xcassets */,
 			);
 			name = Resources;
@@ -211,8 +233,8 @@
 		E20AB5EE1C45A80500068C74 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E20AB5CF1C45A5C000068C74 /* Main.storyboard */,
-				E20AB5D41C45A5C000068C74 /* LaunchScreen.storyboard */,
+				E20AB6351C46A74000068C74 /* IMRootWireframe.h */,
+				E20AB6361C46A74000068C74 /* IMRootWireframe.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -293,6 +315,9 @@
 		E20AB61E1C46A22D00068C74 /* ArtistList */ = {
 			isa = PBXGroup;
 			children = (
+				E20AB6201C46A25E00068C74 /* Application Logic */,
+				E20AB6211C46A26A00068C74 /* Module interface */,
+				E20AB6221C46A27700068C74 /* User interface */,
 			);
 			name = ArtistList;
 			sourceTree = "<group>";
@@ -300,9 +325,6 @@
 		E20AB61F1C46A23C00068C74 /* AlbumList */ = {
 			isa = PBXGroup;
 			children = (
-				E20AB6201C46A25E00068C74 /* Application Logic */,
-				E20AB6211C46A26A00068C74 /* Module interface */,
-				E20AB6221C46A27700068C74 /* User interface */,
 			);
 			name = AlbumList;
 			sourceTree = "<group>";
@@ -317,6 +339,7 @@
 		E20AB6211C46A26A00068C74 /* Module interface */ = {
 			isa = PBXGroup;
 			children = (
+				E20AB6381C46B2E500068C74 /* IMArtistListModuleInterface.h */,
 			);
 			name = "Module interface";
 			sourceTree = "<group>";
@@ -324,8 +347,43 @@
 		E20AB6221C46A27700068C74 /* User interface */ = {
 			isa = PBXGroup;
 			children = (
+				E20AB6291C46A57900068C74 /* Presenter */,
+				E20AB62A1C46A58000068C74 /* View */,
+				E20AB62B1C46A58E00068C74 /* Wireframe */,
 			);
 			name = "User interface";
+			sourceTree = "<group>";
+		};
+		E20AB6291C46A57900068C74 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E20AB62C1C46A5FE00068C74 /* IMArtistListPresenter.h */,
+				E20AB62D1C46A5FE00068C74 /* IMArtistListPresenter.m */,
+				E20AB63A1C46B94F00068C74 /* IMArtistListDisplayData.h */,
+				E20AB63B1C46B94F00068C74 /* IMArtistListDisplayData.m */,
+				E20AB6401C46BF2400068C74 /* IMArtistListDisplayArtist.h */,
+				E20AB6411C46BF2400068C74 /* IMArtistListDisplayArtist.m */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		E20AB62A1C46A58000068C74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E20AB62F1C46A65700068C74 /* IMArtistListViewController.h */,
+				E20AB6301C46A65700068C74 /* IMArtistListViewController.m */,
+				E20AB6391C46B87800068C74 /* IMArtistListViewInterface.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E20AB62B1C46A58E00068C74 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				E20AB6321C46A66E00068C74 /* IMArtistListWireframe.h */,
+				E20AB6331C46A66E00068C74 /* IMArtistListWireframe.m */,
+			);
+			name = Wireframe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,13 +589,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20AB62E1C46A5FE00068C74 /* IMArtistListPresenter.m in Sources */,
 				E20AB5F41C45B0DA00068C74 /* ITunesClient.m in Sources */,
-				E20AB5CE1C45A5C000068C74 /* ViewController.m in Sources */,
-				E20AB5CB1C45A5C000068C74 /* AppDelegate.m in Sources */,
+				E20AB5CB1C45A5C000068C74 /* IMAppDelegate.m in Sources */,
 				E20AB6111C46707A00068C74 /* JSONParser.m in Sources */,
 				E20AB5C81C45A5C000068C74 /* main.m in Sources */,
 				E20AB60A1C466D5300068C74 /* Artist.m in Sources */,
+				E20AB6311C46A65700068C74 /* IMArtistListViewController.m in Sources */,
+				E20AB6341C46A66E00068C74 /* IMArtistListWireframe.m in Sources */,
 				E20AB60D1C466D6C00068C74 /* Album.m in Sources */,
+				E20AB6371C46A74000068C74 /* IMRootWireframe.m in Sources */,
+				E20AB6281C46A40100068C74 /* IMAppDependencies.m in Sources */,
+				E20AB6421C46BF2400068C74 /* IMArtistListDisplayArtist.m in Sources */,
+				E20AB63C1C46B94F00068C74 /* IMArtistListDisplayData.m in Sources */,
 				E20AB5FD1C45BCCE00068C74 /* NSError+CustomError.m in Sources */,
 				E20AB6161C4681FA00068C74 /* NSDate+Formatter.m in Sources */,
 			);
