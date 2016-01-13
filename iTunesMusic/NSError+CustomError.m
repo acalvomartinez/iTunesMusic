@@ -8,7 +8,7 @@
 
 #import "NSError+ITunesMusicError.h"
 
-@implementation NSError (ITunesMusicError)
+@implementation NSError (CustomError)
 
 + (NSError *)errorWithDescription:(NSString *)description
                            reason:(NSString *)reason

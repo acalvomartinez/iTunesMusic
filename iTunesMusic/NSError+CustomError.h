@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSError (ITunesMusicError)
+@interface NSError (CustomError)
 
 + (NSError *)errorWithDescription:(NSString *)description
                            reason:(NSString *)reason
