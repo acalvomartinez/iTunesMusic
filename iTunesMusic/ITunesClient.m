@@ -35,7 +35,7 @@
 
 - (void)fetchArtistInfoWithArtistId:(NSInteger)artistId
                               limit:(NSInteger)limit
-                            success:(CompletionBlock)success
+                            success:(ITunesServiceCompletionBlock)success
                             failure:(ErrorBlock)failure {
     NSDictionary *parameters = @{ITunesClientIdParameter:@(artistId),
                                  ITunesClientEntityParameter: ITunesClientEntityAlbum,
@@ -67,7 +67,7 @@
 - (void)fetchDataForPath:(NSString *)path
               parameters:(NSDictionary *)parameters
                 retrying:(NSInteger)nTimes
-                 success:(CompletionBlock _Nullable)success
+                 success:(ITunesServiceCompletionBlock _Nullable)success
                  failure:(ErrorBlock _Nullable)failure {
     if (nTimes <= 0) {
         if (failure) {
@@ -93,7 +93,7 @@
 
 - (void)GET:(NSString *)path
  parameters:(NSDictionary *)parameters
-    success:(CompletionBlock _Nullable)success
+    success:(ITunesServiceCompletionBlock _Nullable)success
     failure:(void (^)(NSError * _Nullable))failure {
     
     [self.sessionManager GET:path parameters:parameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
