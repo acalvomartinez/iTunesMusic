@@ -8,7 +8,7 @@
         <relationship name="artist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedArtist" inverseName="albums" inverseEntity="ManagedArtist" syncable="YES"/>
     </entity>
     <entity name="ManagedArtist" representedClassName="ManagedArtist" syncable="YES">
-        <attribute name="artistId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="artistId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="artworkURL" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="albums" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ManagedAlbum" inverseName="artist" inverseEntity="ManagedAlbum" syncable="YES"/>

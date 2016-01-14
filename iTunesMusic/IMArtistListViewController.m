@@ -7,10 +7,13 @@
 //
 
 #import "IMArtistListViewController.h"
-#import "IMArtistListDisplayData.h"
+#import "IMArtistViewCell.h"
+#import "IMArtistListDisplayArtist.h"
+
+static NSString * const ArtistViewCellIdentifier = @"ArtistViewCell";
 
 @interface IMArtistListViewController ()
-@property (nonatomic, strong) IMArtistListDisplayData *data;
+@property (nonatomic, strong) NSArray *artistsList;
 @end
 
 @implementation IMArtistListViewController
@@ -29,15 +32,41 @@
 
 - (void)configureView {
     self.navigationItem.title = @"Artists";
-    
 }
 
 #pragma mark - IMArtistListViewInterface
 
-- (void)showArtistListDisplayData:(IMArtistListDisplayData *)data {
-    self.data = data;
+- (void)showDisplayArtists:(NSArray *)artists {
+    self.artistsList = artists;
     
-    NSLog(@"Show: %@",self.data);
+    [self.tableView reloadData];
+}
+
+#pragma mark - UITableViewDelegate and DataSource Methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.artistsList count];
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 90;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    IMArtistViewCell *cell = (IMArtistViewCell *)[self.tableView dequeueReusableCellWithIdentifier:ArtistViewCellIdentifier];
+    
+    [cell setupCellWith:[self.artistsList objectAtIndex:indexPath.row]];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    IMArtistListDisplayArtist *artist = [self.artistsList objectAtIndex:indexPath.row];
+    [self.eventHandler showAlbumsArtistId:artist.artistId];
 }
 
 @end

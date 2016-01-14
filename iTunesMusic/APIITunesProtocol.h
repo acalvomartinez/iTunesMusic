@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^CompletionBlock)(NSDictionary * _Nullable);
+typedef void(^ITunesServiceCompletionBlock)(NSDictionary * _Nullable);
 typedef void(^ErrorBlock)(NSError * _Nullable);
 
 @protocol APIITunesProtocol <NSObject>
@@ -17,7 +17,7 @@ typedef void(^ErrorBlock)(NSError * _Nullable);
 
 - (void)fetchArtistInfoWithArtistId:(NSInteger)artistId
                               limit:(NSInteger)limit
-                            success:(CompletionBlock _Nullable)success
+                            success:(ITunesServiceCompletionBlock _Nullable)success
                             failure:(ErrorBlock _Nullable)failure;
 
 @end

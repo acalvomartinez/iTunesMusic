@@ -50,22 +50,22 @@ const struct ManagedArtistRelationships ManagedArtistRelationships = {
 
 @dynamic artistId;
 
-- (int16_t)artistIdValue {
+- (int32_t)artistIdValue {
 	NSNumber *result = [self artistId];
-	return [result shortValue];
+	return [result intValue];
 }
 
-- (void)setArtistIdValue:(int16_t)value_ {
-	[self setArtistId:[NSNumber numberWithShort:value_]];
+- (void)setArtistIdValue:(int32_t)value_ {
+	[self setArtistId:[NSNumber numberWithInt:value_]];
 }
 
-- (int16_t)primitiveArtistIdValue {
+- (int32_t)primitiveArtistIdValue {
 	NSNumber *result = [self primitiveArtistId];
-	return [result shortValue];
+	return [result intValue];
 }
 
-- (void)setPrimitiveArtistIdValue:(int16_t)value_ {
-	[self setPrimitiveArtistId:[NSNumber numberWithShort:value_]];
+- (void)setPrimitiveArtistIdValue:(int32_t)value_ {
+	[self setPrimitiveArtistId:[NSNumber numberWithInt:value_]];
 }
 
 @dynamic artworkURL;

@@ -9,7 +9,10 @@
 #import "IMAppDependencies.h"
 
 #import "IMRootWireframe.h"
+#import "ITunesClient.h"
 #import "IMCoreDataStore.h"
+#import "IMConfigurationManager.h"
+#import "IMCacheManager.h"
 #import "IMArtistListWireframe.h"
 #import "IMArtistListPresenter.h"
 #import "IMArtistListInteractor.h"
@@ -37,12 +40,19 @@
 {
     // Root Level Classes
     IMRootWireframe *rootWireframe = [[IMRootWireframe alloc] init];
+    ITunesClient *iTunesClient = [[ITunesClient alloc] init];
     IMCoreDataStore *dataStore = [[IMCoreDataStore alloc] init];
+    IMConfigurationManager *configurationManager = [[IMConfigurationManager alloc] init];
+    IMCacheManager *cacheManager = [[IMCacheManager alloc] init];
     
     // Artist List Module Classes
     IMArtistListWireframe *artistListWireframe = [[IMArtistListWireframe alloc] init];
     IMArtistListPresenter *artistListPresenter = [[IMArtistListPresenter alloc] init];
-    IMArtistListDataManager *artistListDataManager = [[IMArtistListDataManager alloc] initWithDataStore:dataStore];
+    IMArtistListDataManager *artistListDataManager = [[IMArtistListDataManager alloc] init];
+    artistListDataManager.iTunesClient = iTunesClient;
+    artistListDataManager.dataStore = dataStore;
+    artistListDataManager.configurationManager = configurationManager;
+    artistListDataManager.cacheManager = cacheManager;
     IMArtistListInteractor *artistListInteractor = [[IMArtistListInteractor alloc] initWithDataManager:artistListDataManager];
     // Album List Module Clasess
     

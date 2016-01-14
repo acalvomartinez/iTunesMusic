@@ -27,13 +27,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Hjf-I6-N5f">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArtistViewCell" rowHeight="90" id="Hjf-I6-N5f" customClass="IMArtistViewCell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hjf-I6-N5f" id="THI-Vn-xlc">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V0m-LE-uFG">
+                                            <rect key="frame" x="15" y="10" width="70" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="70" id="V9c-80-X7a"/>
+                                                <constraint firstAttribute="width" constant="70" id="ys3-2C-DgQ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIZ-Cn-Oob">
+                                            <rect key="frame" x="93" y="34" width="492" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="oIZ-Cn-Oob" firstAttribute="leading" secondItem="V0m-LE-uFG" secondAttribute="trailing" constant="8" id="PcY-gW-ZEw"/>
+                                        <constraint firstItem="V0m-LE-uFG" firstAttribute="centerY" secondItem="THI-Vn-xlc" secondAttribute="centerY" id="RaR-4F-FCQ"/>
+                                        <constraint firstItem="V0m-LE-uFG" firstAttribute="leading" secondItem="THI-Vn-xlc" secondAttribute="leading" constant="15" id="Tkq-QW-yiN"/>
+                                        <constraint firstItem="oIZ-Cn-Oob" firstAttribute="centerY" secondItem="V0m-LE-uFG" secondAttribute="centerY" id="gaq-rk-gBj"/>
+                                        <constraint firstAttribute="trailing" secondItem="oIZ-Cn-Oob" secondAttribute="trailing" constant="15" id="mug-Zm-Bg3"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="artworkView" destination="V0m-LE-uFG" id="AxA-tp-q12"/>
+                                    <outlet property="nameLabel" destination="oIZ-Cn-Oob" id="Pp9-Bp-P9R"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

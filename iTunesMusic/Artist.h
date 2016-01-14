@@ -14,14 +14,20 @@
 
 @property (nonatomic, assign) NSInteger artistId;
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *artworkURL;
 @property (nonatomic, strong) NSArray <Album *> *albums;
 
 + (instancetype)artistWithId:(NSInteger)artistId
                         name:(NSString *)name
                       albums:(NSArray *)albums;
 
++ (instancetype)artistWithId:(NSInteger)artistId
+                        name:(NSString *)name
+                  artworkURL:(NSString *)artworkURL;
+
 - (instancetype)initWithId:(NSInteger)artistId
                       name:(NSString *)name
+                artworkURL:(NSString *)artworkURL
                     albums:(NSArray *)albums;
 
 @end

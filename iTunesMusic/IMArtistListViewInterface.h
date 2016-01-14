@@ -12,6 +12,6 @@
 
 @protocol IMArtistListViewInterface <NSObject>
 
-- (void)showArtistListDisplayData:(IMArtistListDisplayData *)data;
+- (void)showDisplayArtists:(NSArray *)artists;
 
 @end

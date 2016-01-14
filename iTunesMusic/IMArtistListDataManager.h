@@ -9,9 +9,19 @@
 #import <Foundation/Foundation.h>
 
 @class IMCoreDataStore;
+@class IMConfigurationManager;
+@class IMCacheManager;
+@class ITunesClient;
+
+typedef void(^IMArtistListDataManagerFetchArtistsBlock)(NSArray *artists);
 
 @interface IMArtistListDataManager : NSObject
 
-- (instancetype)initWithDataStore:(IMCoreDataStore *)dataStore;
+@property (nonatomic, strong) ITunesClient *iTunesClient;
+@property (nonatomic, strong) IMCoreDataStore *dataStore;
+@property (nonatomic, strong) IMConfigurationManager *configurationManager;
+@property (nonatomic, strong) IMCacheManager *cacheManager;
+
+- (void)fetchArtistsOnCompletionBlock:(IMArtistListDataManagerFetchArtistsBlock)completionBlock;
 
 @end

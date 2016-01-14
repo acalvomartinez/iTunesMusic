@@ -26,9 +26,9 @@ extern const struct ManagedArtistRelationships {
 
 @property (nonatomic, strong) NSNumber* artistId;
 
-@property (atomic) int16_t artistIdValue;
-- (int16_t)artistIdValue;
-- (void)setArtistIdValue:(int16_t)value_;
+@property (atomic) int32_t artistIdValue;
+- (int32_t)artistIdValue;
+- (void)setArtistIdValue:(int32_t)value_;
 
 //- (BOOL)validateArtistId:(id*)value_ error:(NSError**)error_;
 
@@ -59,8 +59,8 @@ extern const struct ManagedArtistRelationships {
 - (NSNumber*)primitiveArtistId;
 - (void)setPrimitiveArtistId:(NSNumber*)value;
 
-- (int16_t)primitiveArtistIdValue;
-- (void)setPrimitiveArtistIdValue:(int16_t)value_;
+- (int32_t)primitiveArtistIdValue;
+- (void)setPrimitiveArtistIdValue:(int32_t)value_;
 
 - (NSString*)primitiveArtworkURL;
 - (void)setPrimitiveArtworkURL:(NSString*)value;

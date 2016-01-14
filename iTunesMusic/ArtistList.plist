@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>artistId</key>
+		<string>909253</string>
+		<key>limit</key>
+		<string>10</string>
+	</dict>
+	<dict>
+		<key>artistId</key>
+		<string>6906197</string>
+		<key>limit</key>
+		<string>20</string>
+	</dict>
+	<dict>
+		<key>artistId</key>
+		<string>16252655</string>
+		<key>limit</key>
+		<string>7</string>
+	</dict>
+</array>
+</plist>
