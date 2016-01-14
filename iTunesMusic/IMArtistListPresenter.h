@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 
 #import "IMArtistListModuleInterface.h"
+#import "IMArtistListInteractorIO.h"
 
 @class IMArtistListViewController;
 @class IMArtistListWireframe;
 
-@interface IMArtistListPresenter : NSObject <IMArtistListModuleInterface>
+@interface IMArtistListPresenter : NSObject <IMArtistListModuleInterface, IMArtistListInteractorOutput>
 
+@property (nonatomic, strong) id<IMArtistListInteractorInput> artistListInteractor;
 @property (nonatomic, strong) IMArtistListViewController *userInterface;
 @property (nonatomic, strong) IMArtistListWireframe *artistListWireframe;
 

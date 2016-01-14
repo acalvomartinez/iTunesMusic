@@ -9,8 +9,11 @@
 #import "IMAppDependencies.h"
 
 #import "IMRootWireframe.h"
+#import "IMCoreDataStore.h"
 #import "IMArtistListWireframe.h"
 #import "IMArtistListPresenter.h"
+#import "IMArtistListInteractor.h"
+#import "IMArtistListDataManager.h"
 
 @interface IMAppDependencies ()
 
@@ -34,17 +37,23 @@
 {
     // Root Level Classes
     IMRootWireframe *rootWireframe = [[IMRootWireframe alloc] init];
+    IMCoreDataStore *dataStore = [[IMCoreDataStore alloc] init];
     
     // Artist List Module Classes
     IMArtistListWireframe *artistListWireframe = [[IMArtistListWireframe alloc] init];
     IMArtistListPresenter *artistListPresenter = [[IMArtistListPresenter alloc] init];
-    
+    IMArtistListDataManager *artistListDataManager = [[IMArtistListDataManager alloc] initWithDataStore:dataStore];
+    IMArtistListInteractor *artistListInteractor = [[IMArtistListInteractor alloc] initWithDataManager:artistListDataManager];
     // Album List Module Clasess
     
     // Artist List Module Classes
     
     // Album List Module Clasess
+    artistListInteractor.output = artistListPresenter;
+    
     artistListPresenter.artistListWireframe = artistListWireframe;
+    artistListPresenter.artistListInteractor = artistListInteractor;
+    
     artistListWireframe.rootWireframe = rootWireframe;
     artistListWireframe.artistListPresenter = artistListPresenter;
     
