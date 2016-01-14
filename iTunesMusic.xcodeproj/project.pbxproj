@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E20AB6541C47B62800068C74 /* mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E20AB6551C47B62800068C74 /* Build configuration list for PBXAggregateTarget "mogenerator" */;
+			buildPhases = (
+				E20AB6581C47B64100068C74 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = mogenerator;
+			productName = mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		8204116FBD8E3BB7308EE6CB /* libPods-iTunesMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB327D99F8590BE5E4E8B3E1 /* libPods-iTunesMusic.a */; };
 		E20AB5C81C45A5C000068C74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB5C71C45A5C000068C74 /* main.m */; };
@@ -35,6 +49,11 @@
 		E20AB6481C47AE4900068C74 /* IMArtistListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB6471C47AE4900068C74 /* IMArtistListInteractor.m */; };
 		E20AB64B1C47AEE700068C74 /* IMArtistListDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB64A1C47AEE700068C74 /* IMArtistListDataManager.m */; };
 		E20AB64F1C47B1A400068C74 /* IMCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB64E1C47B1A400068C74 /* IMCoreDataStore.m */; };
+		E2B5D9AE1C47BA2000CBD1C9 /* iTunesMusic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2B5D9AC1C47BA2000CBD1C9 /* iTunesMusic.xcdatamodeld */; };
+		E2B5D9C21C47D0F900CBD1C9 /* ManagedArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B5D9BB1C47D0F900CBD1C9 /* ManagedArtist.m */; };
+		E2B5D9C31C47D0F900CBD1C9 /* _ManagedArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B5D9BD1C47D0F900CBD1C9 /* _ManagedArtist.m */; };
+		E2B5D9C41C47D0F900CBD1C9 /* ManagedAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B5D9BE1C47D0F900CBD1C9 /* ManagedAlbum.m */; };
+		E2B5D9C61C47D10C00CBD1C9 /* _ManagedAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B5D9C51C47D10C00CBD1C9 /* _ManagedAlbum.m */; };
 		FF3D6002594390B086B273CC /* libPods-iTunesMusicTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA6A9DF7CAB042AEE420827 /* libPods-iTunesMusicTests.a */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +129,15 @@
 		E20AB64A1C47AEE700068C74 /* IMArtistListDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMArtistListDataManager.m; sourceTree = "<group>"; };
 		E20AB64D1C47B1A400068C74 /* IMCoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMCoreDataStore.h; sourceTree = "<group>"; };
 		E20AB64E1C47B1A400068C74 /* IMCoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMCoreDataStore.m; sourceTree = "<group>"; };
+		E2B5D9AD1C47BA2000CBD1C9 /* iTunesMusic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTunesMusic.xcdatamodel; sourceTree = "<group>"; };
+		E2B5D9BB1C47D0F900CBD1C9 /* ManagedArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedArtist.m; sourceTree = "<group>"; };
+		E2B5D9BC1C47D0F900CBD1C9 /* _ManagedArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ManagedArtist.h; sourceTree = "<group>"; };
+		E2B5D9BD1C47D0F900CBD1C9 /* _ManagedArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ManagedArtist.m; sourceTree = "<group>"; };
+		E2B5D9BE1C47D0F900CBD1C9 /* ManagedAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedAlbum.m; sourceTree = "<group>"; };
+		E2B5D9BF1C47D0F900CBD1C9 /* ManagedAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedAlbum.h; sourceTree = "<group>"; };
+		E2B5D9C01C47D0F900CBD1C9 /* _ManagedAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ManagedAlbum.h; sourceTree = "<group>"; };
+		E2B5D9C11C47D0F900CBD1C9 /* ManagedArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedArtist.h; sourceTree = "<group>"; };
+		E2B5D9C51C47D10C00CBD1C9 /* _ManagedAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ManagedAlbum.m; sourceTree = "<group>"; };
 		E8C9467455DEB2F1C249FDFF /* Pods-iTunesMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesMusicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesMusicTests/Pods-iTunesMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EDDB6B3279C086096AF8978A /* Pods-iTunesMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesMusicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesMusicTests/Pods-iTunesMusicTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -421,10 +449,27 @@
 		E20AB64C1C47B18600068C74 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				E20AB6531C47B46400068C74 /* Entities */,
+				E2B5D9AC1C47BA2000CBD1C9 /* iTunesMusic.xcdatamodeld */,
 				E20AB64D1C47B1A400068C74 /* IMCoreDataStore.h */,
 				E20AB64E1C47B1A400068C74 /* IMCoreDataStore.m */,
 			);
 			name = Store;
+			sourceTree = "<group>";
+		};
+		E20AB6531C47B46400068C74 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E2B5D9BC1C47D0F900CBD1C9 /* _ManagedArtist.h */,
+				E2B5D9BD1C47D0F900CBD1C9 /* _ManagedArtist.m */,
+				E2B5D9C11C47D0F900CBD1C9 /* ManagedArtist.h */,
+				E2B5D9BB1C47D0F900CBD1C9 /* ManagedArtist.m */,
+				E2B5D9C01C47D0F900CBD1C9 /* _ManagedAlbum.h */,
+				E2B5D9C51C47D10C00CBD1C9 /* _ManagedAlbum.m */,
+				E2B5D9BF1C47D0F900CBD1C9 /* ManagedAlbum.h */,
+				E2B5D9BE1C47D0F900CBD1C9 /* ManagedAlbum.m */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,6 +533,9 @@
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = E20AB5C21C45A5C000068C74;
 					};
+					E20AB6541C47B62800068C74 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = E20AB5BE1C45A5C000068C74 /* Build configuration list for PBXProject "iTunesMusic" */;
@@ -505,6 +553,7 @@
 			targets = (
 				E20AB5C21C45A5C000068C74 /* iTunesMusic */,
 				E20AB5DB1C45A5C100068C74 /* iTunesMusicTests */,
+				E20AB6541C47B62800068C74 /* mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -578,6 +627,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		E20AB6581C47B64100068C74 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"💾 Mogenerator started\"\nmogenerator --template-var arc=true -m iTunesMusic/iTunesMusic.xcdatamodeld/ -O iTunesMusic\necho \"💾 Mogenerator finished\"";
+		};
 		E58450187B9A496FFA05A53E /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -633,18 +695,23 @@
 				E20AB62E1C46A5FE00068C74 /* IMArtistListPresenter.m in Sources */,
 				E20AB5F41C45B0DA00068C74 /* ITunesClient.m in Sources */,
 				E20AB5CB1C45A5C000068C74 /* IMAppDelegate.m in Sources */,
+				E2B5D9C41C47D0F900CBD1C9 /* ManagedAlbum.m in Sources */,
 				E20AB6111C46707A00068C74 /* JSONParser.m in Sources */,
+				E2B5D9C61C47D10C00CBD1C9 /* _ManagedAlbum.m in Sources */,
 				E20AB5C81C45A5C000068C74 /* main.m in Sources */,
 				E20AB60A1C466D5300068C74 /* Artist.m in Sources */,
 				E20AB6311C46A65700068C74 /* IMArtistListViewController.m in Sources */,
 				E20AB6481C47AE4900068C74 /* IMArtistListInteractor.m in Sources */,
 				E20AB6341C46A66E00068C74 /* IMArtistListWireframe.m in Sources */,
+				E2B5D9C31C47D0F900CBD1C9 /* _ManagedArtist.m in Sources */,
 				E20AB60D1C466D6C00068C74 /* Album.m in Sources */,
 				E20AB6371C46A74000068C74 /* IMRootWireframe.m in Sources */,
 				E20AB6281C46A40100068C74 /* IMAppDependencies.m in Sources */,
 				E20AB6421C46BF2400068C74 /* IMArtistListDisplayArtist.m in Sources */,
 				E20AB64B1C47AEE700068C74 /* IMArtistListDataManager.m in Sources */,
+				E2B5D9C21C47D0F900CBD1C9 /* ManagedArtist.m in Sources */,
 				E20AB64F1C47B1A400068C74 /* IMCoreDataStore.m in Sources */,
+				E2B5D9AE1C47BA2000CBD1C9 /* iTunesMusic.xcdatamodeld in Sources */,
 				E20AB63C1C46B94F00068C74 /* IMArtistListDisplayData.m in Sources */,
 				E20AB5FD1C45BCCE00068C74 /* NSError+CustomError.m in Sources */,
 				E20AB6161C4681FA00068C74 /* NSDate+Formatter.m in Sources */,
@@ -825,6 +892,20 @@
 			};
 			name = Release;
 		};
+		E20AB6561C47B62800068C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E20AB6571C47B62800068C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -855,7 +936,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		E20AB6551C47B62800068C74 /* Build configuration list for PBXAggregateTarget "mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20AB6561C47B62800068C74 /* Debug */,
+				E20AB6571C47B62800068C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E2B5D9AC1C47BA2000CBD1C9 /* iTunesMusic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2B5D9AD1C47BA2000CBD1C9 /* iTunesMusic.xcdatamodel */,
+			);
+			currentVersion = E2B5D9AD1C47BA2000CBD1C9 /* iTunesMusic.xcdatamodel */;
+			path = iTunesMusic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E20AB5BB1C45A5C000068C74 /* Project object */;
 }

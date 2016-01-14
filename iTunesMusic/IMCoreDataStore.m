@@ -7,7 +7,12 @@
 //
 
 #import "IMCoreDataStore.h"
+@import CoreData;
+
+typedef void(^IMArtistListFetchCompletionBlock)(NSArray *results);
 
 @implementation IMCoreDataStore
+
+- (void)fetch
 
 @end
