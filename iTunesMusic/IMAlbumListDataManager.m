@@ -42,8 +42,9 @@
 }
 
 - (NSArray *)albumsFromDataStoreEntries:(NSArray *)entries {
-    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:ManagedAlbumAttributes.releaseDate ascending:YES];
-    NSArray *sortedEntries = [entries sortedArrayUsingDescriptors:@[sortDescriptor]];
+    NSSortDescriptor *sortDescriptorReleaseDate = [NSSortDescriptor sortDescriptorWithKey:ManagedAlbumAttributes.releaseDate ascending:NO];
+    NSSortDescriptor *sortDescriptorAlbumId = [NSSortDescriptor sortDescriptorWithKey:ManagedAlbumAttributes.albumId ascending:NO];
+    NSArray *sortedEntries = [entries sortedArrayUsingDescriptors:@[sortDescriptorReleaseDate, sortDescriptorAlbumId]];
     
     return [sortedEntries arrayFromObjectsCollectedWithBlock:^id(ManagedAlbum *managedAlbum) {
         return [Album albumWithId:managedAlbum.albumIdValue title:managedAlbum.title artworkURL:managedAlbum.artworkURL releaseDate:managedAlbum.releaseDate];

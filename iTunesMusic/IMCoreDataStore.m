@@ -118,6 +118,7 @@ typedef void(^IMArtistListFetchCompletionBlock)(NSArray *results);
 - (ManagedAlbum *)insertManagedAlbumWithAlbum:(Album *)album {
     ManagedAlbum *managedAlbum = [ManagedAlbum insertInManagedObjectContext:self.managedObjectContext];
     
+    managedAlbum.albumIdValue = album.albumId;
     managedAlbum.title = album.title;
     managedAlbum.artworkURL = album.artworkURL;
     managedAlbum.releaseDate = album.releaseDate;

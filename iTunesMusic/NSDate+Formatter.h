@@ -14,5 +14,6 @@
 
 - (NSString *)stringFromDateWithDateFormat:(NSString *)dateFormat;
 
+- (NSString *)year;
 
 @end

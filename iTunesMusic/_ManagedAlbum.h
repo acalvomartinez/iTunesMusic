@@ -27,9 +27,9 @@ extern const struct ManagedAlbumRelationships {
 
 @property (nonatomic, strong) NSNumber* albumId;
 
-@property (atomic) int16_t albumIdValue;
-- (int16_t)albumIdValue;
-- (void)setAlbumIdValue:(int16_t)value_;
+@property (atomic) int32_t albumIdValue;
+- (int32_t)albumIdValue;
+- (void)setAlbumIdValue:(int32_t)value_;
 
 //- (BOOL)validateAlbumId:(id*)value_ error:(NSError**)error_;
 
@@ -56,8 +56,8 @@ extern const struct ManagedAlbumRelationships {
 - (NSNumber*)primitiveAlbumId;
 - (void)setPrimitiveAlbumId:(NSNumber*)value;
 
-- (int16_t)primitiveAlbumIdValue;
-- (void)setPrimitiveAlbumIdValue:(int16_t)value_;
+- (int32_t)primitiveAlbumIdValue;
+- (void)setPrimitiveAlbumIdValue:(int32_t)value_;
 
 - (NSString*)primitiveArtworkURL;
 - (void)setPrimitiveArtworkURL:(NSString*)value;

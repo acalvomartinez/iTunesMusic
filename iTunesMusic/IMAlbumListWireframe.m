@@ -11,7 +11,7 @@
 #import "IMAlbumListPresenter.h"
 #import "IMRootWireframe.h"
 
-static NSString *AlbumListViewControllerIdentifier = @"AlbumListViewController";
+static NSString *AlbumListViewControllerIdentifier = @"IMAlbumListViewController";
 
 @implementation IMAlbumListWireframe
 

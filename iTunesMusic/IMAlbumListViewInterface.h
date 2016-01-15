@@ -11,5 +11,6 @@
 @protocol IMAlbumListViewInterface <NSObject>
 
 - (void)showDisplayAlbums:(NSArray *)albums;
+- (void)showViewTitle:(NSString *)title;
 
 @end

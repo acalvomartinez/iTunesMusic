@@ -32,4 +32,12 @@
     return stringfromDate;
 }
 
+- (NSString *)year {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy"];
+    return [dateFormatter stringFromDate:self];
+}
+
+
+
 @end
