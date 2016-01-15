@@ -14,4 +14,6 @@
 - (void)showRootViewController:(UIViewController *)viewController
                       inWindow:(UIWindow *)window;
 
+- (void)presentViewController:(UIViewController *)viewController;
+
 @end

@@ -25,6 +25,11 @@
                         name:(NSString *)name
                   artworkURL:(NSString *)artworkURL;
 
++ (instancetype)artistWithId:(NSInteger)artistId
+                        name:(NSString *)name
+                  artworkURL:(NSString *)artworkURL
+                      albums:(NSArray *)albums;
+
 - (instancetype)initWithId:(NSInteger)artistId
                       name:(NSString *)name
                 artworkURL:(NSString *)artworkURL

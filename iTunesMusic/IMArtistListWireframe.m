@@ -11,6 +11,7 @@
 #import "IMArtistListViewController.h"
 #import "IMArtistListPresenter.h"
 #import "IMRootWireframe.h"
+#import "IMAlbumListWireframe.h"
 
 static NSString *ArtistListViewControllerIdentifier = @"IMArtistListViewController";
 
@@ -39,6 +40,10 @@ static NSString *ArtistListViewControllerIdentifier = @"IMArtistListViewControll
     IMArtistListViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:ArtistListViewControllerIdentifier];
     
     return viewController;
+}
+
+- (void)presentAlbumListInterfaceForArtistId:(NSInteger)artistId {
+    [self.albumListWireframe presentAlbumListInterfaceForArtistId:artistId];
 }
 
 @end

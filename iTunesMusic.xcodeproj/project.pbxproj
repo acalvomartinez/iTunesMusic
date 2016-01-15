@@ -49,6 +49,11 @@
 		E20AB64B1C47AEE700068C74 /* IMArtistListDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB64A1C47AEE700068C74 /* IMArtistListDataManager.m */; };
 		E20AB64F1C47B1A400068C74 /* IMCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E20AB64E1C47B1A400068C74 /* IMCoreDataStore.m */; };
 		E25CF26C1C486625000DCC4F /* IMAlbumListWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = E25CF26B1C486625000DCC4F /* IMAlbumListWireframe.m */; };
+		E25CF2701C48674E000DCC4F /* IMAlbumListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25CF26F1C48674E000DCC4F /* IMAlbumListViewController.m */; };
+		E25CF2741C486864000DCC4F /* IMAlbumListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E25CF2731C486864000DCC4F /* IMAlbumListPresenter.m */; };
+		E25CF2781C4881BE000DCC4F /* IMAlbumListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E25CF2771C4881BE000DCC4F /* IMAlbumListInteractor.m */; };
+		E25CF27B1C488269000DCC4F /* IMAlbumListDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E25CF27A1C488269000DCC4F /* IMAlbumListDataManager.m */; };
+		E25CF27E1C48890F000DCC4F /* IMAlbumListAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = E25CF27D1C48890F000DCC4F /* IMAlbumListAlbum.m */; };
 		E28378B61C48441E007E5C8B /* IMArtistViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E28378B51C48441E007E5C8B /* IMArtistViewCell.m */; };
 		E2B5D9AE1C47BA2000CBD1C9 /* iTunesMusic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2B5D9AC1C47BA2000CBD1C9 /* iTunesMusic.xcdatamodeld */; };
 		E2B5D9C21C47D0F900CBD1C9 /* ManagedArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B5D9BB1C47D0F900CBD1C9 /* ManagedArtist.m */; };
@@ -135,6 +140,19 @@
 		E20AB64E1C47B1A400068C74 /* IMCoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMCoreDataStore.m; sourceTree = "<group>"; };
 		E25CF26A1C486625000DCC4F /* IMAlbumListWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAlbumListWireframe.h; sourceTree = "<group>"; };
 		E25CF26B1C486625000DCC4F /* IMAlbumListWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAlbumListWireframe.m; sourceTree = "<group>"; };
+		E25CF26D1C48670E000DCC4F /* IMAlbumListViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAlbumListViewInterface.h; sourceTree = "<group>"; };
+		E25CF26E1C48674E000DCC4F /* IMAlbumListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAlbumListViewController.h; sourceTree = "<group>"; };
+		E25CF26F1C48674E000DCC4F /* IMAlbumListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAlbumListViewController.m; sourceTree = "<group>"; };
+		E25CF2711C4867BE000DCC4F /* IMAlbumListModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAlbumListModuleInterface.h; sourceTree = "<group>"; };
+		E25CF2721C486864000DCC4F /* IMAlbumListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAlbumListPresenter.h; sourceTree = "<group>"; };
+		E25CF2731C486864000DCC4F /* IMAlbumListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAlbumListPresenter.m; sourceTree = "<group>"; };
+		E25CF2751C488152000DCC4F /* IMAlbumListInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAlbumListInteractorIO.h; sourceTree = "<group>"; };
+		E25CF2761C4881BE000DCC4F /* IMAlbumListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAlbumListInteractor.h; sourceTree = "<group>"; };
+		E25CF2771C4881BE000DCC4F /* IMAlbumListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAlbumListInteractor.m; sourceTree = "<group>"; };
+		E25CF2791C488269000DCC4F /* IMAlbumListDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAlbumListDataManager.h; sourceTree = "<group>"; };
+		E25CF27A1C488269000DCC4F /* IMAlbumListDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAlbumListDataManager.m; sourceTree = "<group>"; };
+		E25CF27C1C48890F000DCC4F /* IMAlbumListAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAlbumListAlbum.h; sourceTree = "<group>"; };
+		E25CF27D1C48890F000DCC4F /* IMAlbumListAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAlbumListAlbum.m; sourceTree = "<group>"; };
 		E28378B41C48441E007E5C8B /* IMArtistViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMArtistViewCell.h; sourceTree = "<group>"; };
 		E28378B51C48441E007E5C8B /* IMArtistViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMArtistViewCell.m; sourceTree = "<group>"; };
 		E2B5D9AD1C47BA2000CBD1C9 /* iTunesMusic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTunesMusic.xcdatamodel; sourceTree = "<group>"; };
@@ -513,6 +531,7 @@
 		E25CF2631C4865AA000DCC4F /* Module interface */ = {
 			isa = PBXGroup;
 			children = (
+				E25CF2711C4867BE000DCC4F /* IMAlbumListModuleInterface.h */,
 			);
 			name = "Module interface";
 			sourceTree = "<group>";
@@ -529,6 +548,8 @@
 		E25CF2651C4865CF000DCC4F /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				E25CF2791C488269000DCC4F /* IMAlbumListDataManager.h */,
+				E25CF27A1C488269000DCC4F /* IMAlbumListDataManager.m */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -536,6 +557,11 @@
 		E25CF2661C4865D7000DCC4F /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				E25CF2751C488152000DCC4F /* IMAlbumListInteractorIO.h */,
+				E25CF2761C4881BE000DCC4F /* IMAlbumListInteractor.h */,
+				E25CF2771C4881BE000DCC4F /* IMAlbumListInteractor.m */,
+				E25CF27C1C48890F000DCC4F /* IMAlbumListAlbum.h */,
+				E25CF27D1C48890F000DCC4F /* IMAlbumListAlbum.m */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -552,6 +578,9 @@
 		E25CF2681C4865EA000DCC4F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E25CF26D1C48670E000DCC4F /* IMAlbumListViewInterface.h */,
+				E25CF26E1C48674E000DCC4F /* IMAlbumListViewController.h */,
+				E25CF26F1C48674E000DCC4F /* IMAlbumListViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -559,6 +588,8 @@
 		E25CF2691C4865F3000DCC4F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				E25CF2721C486864000DCC4F /* IMAlbumListPresenter.h */,
+				E25CF2731C486864000DCC4F /* IMAlbumListPresenter.m */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -795,6 +826,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E25CF2781C4881BE000DCC4F /* IMAlbumListInteractor.m in Sources */,
 				E2B5D9D91C47FDFD00CBD1C9 /* IMCacheManager.m in Sources */,
 				E20AB62E1C46A5FE00068C74 /* IMArtistListPresenter.m in Sources */,
 				E20AB5F41C45B0DA00068C74 /* ITunesClient.m in Sources */,
@@ -802,8 +834,10 @@
 				E2B5D9C41C47D0F900CBD1C9 /* ManagedAlbum.m in Sources */,
 				E20AB6111C46707A00068C74 /* JSONParser.m in Sources */,
 				E2B5D9C61C47D10C00CBD1C9 /* _ManagedAlbum.m in Sources */,
+				E25CF2701C48674E000DCC4F /* IMAlbumListViewController.m in Sources */,
 				E20AB5C81C45A5C000068C74 /* main.m in Sources */,
 				E20AB60A1C466D5300068C74 /* Artist.m in Sources */,
+				E25CF27B1C488269000DCC4F /* IMAlbumListDataManager.m in Sources */,
 				E20AB6311C46A65700068C74 /* IMArtistListViewController.m in Sources */,
 				E20AB6481C47AE4900068C74 /* IMArtistListInteractor.m in Sources */,
 				E2B5D9CF1C47DF5A00CBD1C9 /* IMConfigurationManager.m in Sources */,
@@ -812,6 +846,8 @@
 				E25CF26C1C486625000DCC4F /* IMAlbumListWireframe.m in Sources */,
 				E20AB60D1C466D6C00068C74 /* Album.m in Sources */,
 				E20AB6371C46A74000068C74 /* IMRootWireframe.m in Sources */,
+				E25CF27E1C48890F000DCC4F /* IMAlbumListAlbum.m in Sources */,
+				E25CF2741C486864000DCC4F /* IMAlbumListPresenter.m in Sources */,
 				E20AB6281C46A40100068C74 /* IMAppDependencies.m in Sources */,
 				E20AB6421C46BF2400068C74 /* IMArtistListDisplayArtist.m in Sources */,
 				E28378B61C48441E007E5C8B /* IMArtistViewCell.m in Sources */,

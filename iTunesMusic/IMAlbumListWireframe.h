@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class IMAlbumListPresenter;
+@class IMRootWireframe;
+
 @interface IMAlbumListWireframe : NSObject
+
+@property (nonatomic, strong) IMAlbumListPresenter *albumListPresenter;
+@property (nonatomic, strong) IMRootWireframe *rootWireframe;
+
+- (void)presentAlbumListInterfaceForArtistId:(NSInteger)artistId;
 
 @end

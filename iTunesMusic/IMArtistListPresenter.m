@@ -22,7 +22,7 @@
 }
 
 - (void)showAlbumsArtistId:(NSInteger)artistId {
-    
+    [self.artistListWireframe presentAlbumListInterfaceForArtistId:artistId];
 }
 
 #pragma mark - Artist List Interactor Output

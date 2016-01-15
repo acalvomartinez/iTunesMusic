@@ -8,6 +8,12 @@
 
 #import "IMRootWireframe.h"
 
+@interface IMRootWireframe ()
+
+@property (nonatomic, strong) UINavigationController *navigationController;
+
+@end
+
 @implementation IMRootWireframe
 
 - (void)showRootViewController:(UIViewController *)viewController
@@ -15,6 +21,12 @@
 {
     UINavigationController *navigationController = [self navigationControllerFromWindow:window];
     navigationController.viewControllers = @[viewController];
+    
+    self.navigationController = navigationController;
+}
+
+- (void)presentViewController:(UIViewController *)viewController {
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 
