@@ -1,5 +1,4 @@
 # iTunesMusic
--------------
 This example application access to iTunes web service. 
 
 Developed Objective C, using VIPER arquitecture.
@@ -13,11 +12,9 @@ URLs examples:
 Uses CocoaPods [AFNetworking](https://github.com/AFNetworking/AFNetworking), [Haneke](https://github.com/Haneke/Haneke) and [OHHTTPStubs](https://github.com/AliSoftware/OHHTTPStubs)
 
 ##Installing
-------------
 Run *'pod install'*
 
 ##License
----------
 The MIT License (MIT)
 
 Copyright (c) 2016 Toni
