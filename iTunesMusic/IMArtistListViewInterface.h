@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@class IMArtistListDisplayData;
-
 @protocol IMArtistListViewInterface <NSObject>
 
 - (void)showDisplayArtists:(NSArray *)artists;

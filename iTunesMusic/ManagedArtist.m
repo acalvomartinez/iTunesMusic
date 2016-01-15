@@ -15,9 +15,10 @@
         return nil;
     }
     
-    NSArray *sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"releaseDate" ascending:NO]];
+    NSSortDescriptor *sortDescriptorReleaseDate = [NSSortDescriptor sortDescriptorWithKey:ManagedAlbumAttributes.releaseDate ascending:NO];
+    NSSortDescriptor *sortDescriptorAlbumId = [NSSortDescriptor sortDescriptorWithKey:ManagedAlbumAttributes.albumId ascending:NO];
     
-    ManagedAlbum *lastAlbum = [[self.albums sortedArrayUsingDescriptors:sortDescriptors] firstObject];
+    ManagedAlbum *lastAlbum = [[self.albums sortedArrayUsingDescriptors:@[sortDescriptorReleaseDate, sortDescriptorAlbumId]] firstObject];
     
     return lastAlbum.artworkURL;
 }

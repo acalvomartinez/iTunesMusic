@@ -22,7 +22,7 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"%@ %u %@ - %@", [super description], self.artistId, self.name, self.artworkURL];
+    return [NSString stringWithFormat:@"%@ %ld %@ - %@", [super description], (long)self.artistId, self.name, self.artworkURL];
 }
 
 

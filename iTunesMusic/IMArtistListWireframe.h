@@ -11,12 +11,15 @@
 
 @class IMArtistListPresenter;
 @class IMRootWireframe;
+@class IMAlbumListWireframe;
 
 @interface IMArtistListWireframe : NSObject
 
 @property (nonatomic, strong) IMArtistListPresenter *artistListPresenter;
 @property (nonatomic, strong) IMRootWireframe *rootWireframe;
+@property (nonatomic, strong) IMAlbumListWireframe *albumListWireframe;
 
 - (void)presentArtistListInterfaceFromWindow:(UIWindow *)window;
+- (void)presentAlbumListInterfaceForArtistId:(NSInteger)artistId;
 
 @end

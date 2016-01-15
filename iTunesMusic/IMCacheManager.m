@@ -64,7 +64,7 @@
 
 - (NSString *)cachePathForArtistFileId:(NSInteger)artistId {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    return [[paths firstObject] stringByAppendingPathComponent:[NSString stringWithFormat:@"artist-%u.dat",artistId]];
+    return [[paths firstObject] stringByAppendingPathComponent:[NSString stringWithFormat:@"artist-%ld.dat",(long)artistId]];
 }
 
 @end

@@ -51,22 +51,22 @@ const struct ManagedAlbumRelationships ManagedAlbumRelationships = {
 
 @dynamic albumId;
 
-- (int16_t)albumIdValue {
+- (int32_t)albumIdValue {
 	NSNumber *result = [self albumId];
-	return [result shortValue];
+	return [result intValue];
 }
 
-- (void)setAlbumIdValue:(int16_t)value_ {
-	[self setAlbumId:[NSNumber numberWithShort:value_]];
+- (void)setAlbumIdValue:(int32_t)value_ {
+	[self setAlbumId:[NSNumber numberWithInt:value_]];
 }
 
-- (int16_t)primitiveAlbumIdValue {
+- (int32_t)primitiveAlbumIdValue {
 	NSNumber *result = [self primitiveAlbumId];
-	return [result shortValue];
+	return [result intValue];
 }
 
-- (void)setPrimitiveAlbumIdValue:(int16_t)value_ {
-	[self setPrimitiveAlbumId:[NSNumber numberWithShort:value_]];
+- (void)setPrimitiveAlbumIdValue:(int32_t)value_ {
+	[self setPrimitiveAlbumId:[NSNumber numberWithInt:value_]];
 }
 
 @dynamic artworkURL;

@@ -11,6 +11,7 @@
 #import "IMArtistListDisplayArtist.h"
 
 static NSString * const ArtistViewCellIdentifier = @"ArtistViewCell";
+static float const CellHeight = 90;
 
 @interface IMArtistListViewController ()
 @property (nonatomic, strong) NSArray *artistsList;
@@ -22,11 +23,6 @@ static NSString * const ArtistViewCellIdentifier = @"ArtistViewCell";
     [super viewDidLoad];
 
     [self configureView];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
     [self.eventHandler updateView];
 }
 
@@ -53,7 +49,7 @@ static NSString * const ArtistViewCellIdentifier = @"ArtistViewCell";
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 90;
+    return CellHeight;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

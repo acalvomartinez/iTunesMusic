@@ -17,6 +17,10 @@
 #import "IMArtistListPresenter.h"
 #import "IMArtistListInteractor.h"
 #import "IMArtistListDataManager.h"
+#import "IMAlbumListWireframe.h"
+#import "IMAlbumListPresenter.h"
+#import "IMAlbumListDataManager.h"
+#import "IMAlbumListInteractor.h"
 
 @interface IMAppDependencies ()
 
@@ -26,8 +30,7 @@
 
 @implementation IMAppDependencies
 
-- (id)init
-{
+- (id)init {
     if ((self = [super init]))
     {
         [self configureDependencies];
@@ -36,8 +39,7 @@
     return self;
 }
 
-- (void)configureDependencies
-{
+- (void)configureDependencies {
     // Root Level Classes
     IMRootWireframe *rootWireframe = [[IMRootWireframe alloc] init];
     ITunesClient *iTunesClient = [[ITunesClient alloc] init];
@@ -54,24 +56,33 @@
     artistListDataManager.configurationManager = configurationManager;
     artistListDataManager.cacheManager = cacheManager;
     IMArtistListInteractor *artistListInteractor = [[IMArtistListInteractor alloc] initWithDataManager:artistListDataManager];
+    
     // Album List Module Clasess
+    IMAlbumListWireframe *albumListWireframe = [[IMAlbumListWireframe alloc] init];
+    IMAlbumListPresenter *albumListPresenter = [[IMAlbumListPresenter alloc] init];
+    IMAlbumListDataManager *albumListDataManager = [[IMAlbumListDataManager alloc] init];
+    albumListDataManager.dataStore = dataStore;
+    IMAlbumListInteractor *albumListInteractor = [[IMAlbumListInteractor alloc] initWithDataManager:albumListDataManager];
     
     // Artist List Module Classes
-    
-    // Album List Module Clasess
     artistListInteractor.output = artistListPresenter;
-    
-    artistListPresenter.artistListWireframe = artistListWireframe;
     artistListPresenter.artistListInteractor = artistListInteractor;
-    
+    artistListPresenter.artistListWireframe = artistListWireframe;
     artistListWireframe.rootWireframe = rootWireframe;
     artistListWireframe.artistListPresenter = artistListPresenter;
+    artistListWireframe.albumListWireframe = albumListWireframe;
+    
+    // Album List Module Classes
+    albumListInteractor.output = albumListPresenter;
+    albumListPresenter.albumListInteractor = albumListInteractor;
+    albumListPresenter.albumListWireframe = albumListWireframe;
+    albumListWireframe.rootWireframe = rootWireframe;
+    albumListWireframe.albumListPresenter = albumListPresenter;
     
     self.artistListWireframe = artistListWireframe;
 }
 
-- (void)installRootViewControllerIntoWindow:(UIWindow *)window
-{
+- (void)installRootViewControllerIntoWindow:(UIWindow *)window {
     [self.artistListWireframe presentArtistListInterfaceFromWindow:window];
 }
 
