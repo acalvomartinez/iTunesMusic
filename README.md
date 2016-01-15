@@ -6,10 +6,11 @@ Developed Objective C, using VIPER arquitecture.
 
 URLs examples:
 
-* <https://itunes.apple.com/lookup?id=909253&entity=album&media=music&limit=10>* <https://itunes.apple.com/lookup?id=6906197&entity=album&media=music&limit=20>* <https://itunes.apple.com/lookup?id=16252655&entity=album&media=music&limit=7>
+* <https://itunes.apple.com/lookup?id=909253&entity=album&media=music&limit=10>
+* <https://itunes.apple.com/lookup?id=6906197&entity=album&media=music&limit=20>
+* <https://itunes.apple.com/lookup?id=16252655&entity=album&media=music&limit=7>
 
 Uses CocoaPods [AFNetworking](https://github.com/AFNetworking/AFNetworking), [Haneke](https://github.com/Haneke/Haneke) and [OHHTTPStubs](https://github.com/AliSoftware/OHHTTPStubs)
-
 
 ##Installing
 ------------
